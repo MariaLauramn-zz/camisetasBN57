@@ -1,14 +1,14 @@
-package org.example.exampleapp;
+package org.camisetas.camisetasapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class
-ExampleApplication {
+CamisetasApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ExampleApplication.class, args);
+        SpringApplication.run(CamisetasApplication.class, args);
     }
 
 }
