@@ -1,13 +1,14 @@
 import * as React from "react";
-import {NavBar} from "./navBar";
+import {NavigationBar} from "./NavigationBar";
 import {Nosotros} from "./nosotros";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {Footer} from "./footer"
 
+
 export const App = () => {
     return <Router>
-        <NavBar />
-        <Switch>
+        <NavigationBar/>
+        {/* <Switch>
             <Route path="/nosotros">
                 <Nosotros />
             </Route>
@@ -15,7 +16,7 @@ export const App = () => {
                 <Catalogo />
             </Route>
             </Switch>
-        <Footer />
+        <Footer /> */}
 
     </Router>
 
