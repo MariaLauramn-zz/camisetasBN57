@@ -4,13 +4,9 @@
 import '../scss/main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {App} from "./components/App";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
 
 
 ReactDOM.render(
-    <div className="greeting">⚛️ la vida es dura! ⚛️</div>,
-    React.createElement(App),
+    <div className="greeting">⚛️ Hello from React! ⚛️</div>,
     document.getElementById("app")
 )
