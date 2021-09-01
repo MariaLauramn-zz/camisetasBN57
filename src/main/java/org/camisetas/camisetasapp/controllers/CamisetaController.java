@@ -7,13 +7,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Controller
+@RestController
 public class CamisetaController {
 
-    private CamisetaService camisetaService;
+    private final CamisetaService camisetaService;
 
     @Autowired
     public CamisetaController(CamisetaService camisetaService) {
@@ -26,5 +29,10 @@ public class CamisetaController {
         model.addAttribute("name", "Camiseta list");
         model.addAttribute("camisetas", camisetas);
         return "camisetas/all";
+    }
+    @PostMapping("/new")
+  String addCamiseta(@ModelAttribute Camiseta camiseta){
+      camisetaService.save(camiseta);
+      return "redirect:/camisetas";
     }
 }
