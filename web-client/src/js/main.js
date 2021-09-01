@@ -7,6 +7,6 @@ import ReactDOM from 'react-dom'
 
 
 ReactDOM.render(
-    <div className="greeting">⚛️ Hello from React! ⚛️</div>,
+    <div className="greeting">⚛️ la vida es dura! ⚛️</div>,
     document.getElementById("app")
 )
