@@ -1,7 +1,14 @@
 import * as React from 'react';
+import {ShirtCard} from "./shirtCard";
 
-export const Shirt = () => (
-    <div>
-        Aqui pondremos el catalogo de camisetas
-    </div>
-)
+export const Shirt = (props) => (
+    <section className={"shirtSection"}>
+
+        { props.shirts.map( shirt =>
+            <ShirtCard shirt={shirt} />
+
+        ) }
+
+    </section>
+
+);

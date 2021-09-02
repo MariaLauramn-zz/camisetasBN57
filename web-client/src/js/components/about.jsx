@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const About = () => <section>
+export const About = () => <section className="aboutSection">
     <p>
         HISTORIA BN57
 
