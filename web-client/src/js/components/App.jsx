@@ -3,32 +3,25 @@ import {NavigationBar} from "./navigationBar";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import {About} from "./about";
 import {Shirt} from "./shirt";
+import {useEffect, useState} from "react";
 
 export const App = () => {
 
-    const shirtList = [
-        {
-            name: "vintage",
-            size: "m",
-            color:"black",
-            price:"20,00",
-        },
-        {
-            name: "viaje",
-            size: "s",
-            color:"white",
-            price:"20,00",
-        }
-    ]
+    const [shirts, setShirts] = useState([])
+    useEffect(() => {
+        fetch("/shirts")
+            .then(response => response.json())
+            .then(setShirts)
+    })
 
     return <Router>
         <NavigationBar/>
 <Switch>
     <Route path="/shirt">
-        <Shirt shirts={shirtList}/>
+        <Shirt shirts={shirts}/>
     </Route>
     <Route path="/about">
-        <About />
+        <About/>
     </Route>
 </Switch>
     </Router>
