@@ -1,8 +1,8 @@
 package org.camisetas.camisetasapp.services;
 
 
-import org.camisetas.camisetasapp.models.Camiseta;
-import org.camisetas.camisetasapp.models.CamisetaRepository;
+import org.camisetas.camisetasapp.models.Shirt;
+import org.camisetas.camisetasapp.models.ShirtRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,28 +11,28 @@ import java.util.List;
 @Service
 public class CamisetaService {
 
-    private final CamisetaRepository camisetaRepository;
+    private final ShirtRepository shirtRepository;
 
     @Autowired
-    public CamisetaService (CamisetaRepository camisetaRepository) {
-        this.camisetaRepository= camisetaRepository;
+    public CamisetaService (ShirtRepository shirtRepository) {
+        this.shirtRepository = shirtRepository;
     }
 
     public List<Camiseta> allCamisetas() {
-        List<Camiseta> allCamisetas = (List<Camiseta>) camisetaRepository.findAll();
+        List<Camiseta> allCamisetas = (List<Camiseta>) shirtRepository.findAll();
         return allCamisetas;
     }
 
     public void save(Camiseta camiseta) {
-        camisetaRepository.save(camiseta);
+        shirtRepository.save(camiseta);
     }
 
     public Camiseta findById(Long id) {
-        return camisetaRepository.findById(id).orElse(null);
+        return shirtRepository.findById(id).orElse(null);
     }
 
     public void delete(Long id) {
-        camisetaRepository.deleteById(id);
+        shirtRepository.deleteById(id);
     }
 
 }

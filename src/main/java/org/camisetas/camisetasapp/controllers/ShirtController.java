@@ -1,38 +1,37 @@
 package org.camisetas.camisetasapp.controllers;
 
-
-import org.camisetas.camisetasapp.models.Camiseta;
-import org.camisetas.camisetasapp.services.CamisetaService;
+import org.camisetas.camisetasapp.models.Shirt;
+import org.camisetas.camisetasapp.models.ShirtRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
-public class CamisetaController {
 
-    private final CamisetaService camisetaService;
+@RestController
+public class ShirtController {
+
+    private ShirtRepository shirtRepository;
 
     @Autowired
-    public CamisetaController(CamisetaService camisetaService) {
-        this.camisetaService = camisetaService;
+    public ShirtController(ShirtRepository shirtRepository) {
+        this.shirtRepository = shirtRepository;
     }
-//operación read de CRUD
-    @GetMapping("/camisetas")
-    String listCamisetas(Model model) {
-        List<Camiseta> camisetas = camisetaService.allCamisetas();
-        model.addAttribute("name", "Camiseta list");
-        model.addAttribute("camisetas", camisetas);
-        return "camisetas/all";
+
+
+    @GetMapping("/shirts")
+    public List<Shirt> allShirts() {
+        return (List<Shirt>) shirtRepository.findAll();
     }
-    @PostMapping("/new")
-  String addCamiseta(@ModelAttribute Camiseta camiseta){
-      camisetaService.save(camiseta);
-      return "redirect:/camisetas";
+
+    @PostMapping("/shirts")
+    public ResponseEntity<String> addShirt(@RequestBody Shirt shirt) {
+        shirtRepository.save(shirt);
+        return new ResponseEntity<>("Created", HttpStatus.OK);
     }
 }
