@@ -12,19 +12,15 @@ export const App = () => {
 
     const [shirts, setShirts] = useState([])
 
-    const [needsUpdate, setNeedsUpdate] = useState(true)
 
     useEffect(() => {
-        if (needsUpdate) {
+
             shirtApi.getShirts()
                 .then(setShirts)
-                .then(_ => setNeedsUpdate(false))
-        }
-    }, [needsUpdate])
 
-    const saveShirt = shirt =>
-        shirtApi.saveShirt(shirt)
-            .then(_ => setNeedsUpdate(true))
+    }, [])
+
+
 
     return <Router>
         <NavigationBar/>
