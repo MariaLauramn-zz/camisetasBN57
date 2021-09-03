@@ -12,14 +12,15 @@ public class Shirt {
     private String name;
     private String size;
     private String color;
-    private boolean price;
+    private double cost;
 
 
-    public Shirt(Long id, String name, String size, String color, boolean price) {
+    public Shirt(Long id, String name, String size, String color, double cost) {
         this.name= name;
         this.size = size;
         this.color = color;
-        this.price = price;
+        this.cost = cost;
+
     }
 
     public Shirt() {
@@ -59,11 +60,11 @@ public class Shirt {
         this.color = color;
     }
 
-    public boolean isPrice() {
-        return price;
+    public double getCost() {
+        return cost;
     }
 
-    public void setPrice(boolean price) {
-        this.price = price;
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 }
