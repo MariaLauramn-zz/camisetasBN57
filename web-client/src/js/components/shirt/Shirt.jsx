@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ShirtCard} from "./shirtCard";
+import {ShirtCard} from "../shirtCard/ShirtCard";
 
 export const Shirt = (props) => (
     <section className={"shirtSection"}>
