@@ -21,7 +21,6 @@ export const App = () => {
 
     }, [])
 
-
     return <Router>
         <NavigationBar/>
         <Switch>
