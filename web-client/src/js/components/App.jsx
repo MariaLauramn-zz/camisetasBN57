@@ -15,22 +15,21 @@ export const App = () => {
 
     useEffect(() => {
 
-            shirtApi.getShirts()
-                .then(setShirts)
+        shirtApi.getShirts()
+            .then(setShirts)
 
     }, [])
 
 
-
     return <Router>
         <NavigationBar/>
-<Switch>
-    <Route path="/shirt">
-        <Shirt shirts={shirts}/>
-    </Route>
-    <Route path="/about">
-        <About/>
-    </Route>
-</Switch>
+        <Switch>
+            <Route path="/shirt">
+                <Shirt shirts={shirts}/>
+            </Route>
+            <Route path="/about">
+                <About/>
+            </Route>
+        </Switch>
     </Router>
 }
