@@ -5,6 +5,7 @@ import {About} from "./about/About";
 import {Shirt} from "./shirt/Shirt";
 import {useEffect, useState} from "react";
 import {ShirtApi} from "../api/ShirtApi";
+import {Home} from "./home/Home";
 
 export const App = () => {
 
@@ -15,22 +16,24 @@ export const App = () => {
 
     useEffect(() => {
 
-            shirtApi.getShirts()
-                .then(setShirts)
+        shirtApi.getShirts()
+            .then(setShirts)
 
     }, [])
 
 
-
     return <Router>
         <NavigationBar/>
-<Switch>
-    <Route path="/shirt">
-        <Shirt shirts={shirts}/>
-    </Route>
-    <Route path="/about">
-        <About/>
-    </Route>
-</Switch>
+        <Switch>
+            <Route exact path="/">
+                <Home/>
+            </Route>
+            <Route path="/shirt">
+                <Shirt shirts={shirts}/>
+            </Route>
+            <Route path="/about">
+                <About/>
+            </Route>
+        </Switch>
     </Router>
 }

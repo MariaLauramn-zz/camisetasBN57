@@ -6,10 +6,11 @@ import { Nav, Navbar} from "react-bootstrap";
 export const NavigationBar = () => (
     <Navbar bg="light" variant="light">
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-        <Nav className="mr-auto nav">
-            <Nav.Link href="#pricing">Inicio</Nav.Link>
-            <Nav.Link href="#home">Camisetas</Nav.Link>
-            <Nav.Link href="#features">Sobre Nosotros</Nav.Link>
+        <Nav className="mr-auto">
+            <Link to={"/"}>Inicio</Link>
+            <Link to={"/shirt"}>Camisetas</Link>
+            <Link to={"/about"}>Sobre nosotros</Link>
         </Nav>
     </Navbar>
+
 )
