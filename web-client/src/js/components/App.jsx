@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {NavigationBar} from "./navigationBar/NavigationBar";
+import {Footer} from "./footer/Footer";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import {About} from "./about/About";
 import {Shirt} from "./shirt/Shirt";
@@ -35,5 +36,6 @@ export const App = () => {
                 <About/>
             </Route>
         </Switch>
+        <Footer/>
     </Router>
 }
