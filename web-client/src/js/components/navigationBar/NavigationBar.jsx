@@ -1,15 +1,15 @@
 import * as React from "react";
-import {Link} from "react-router-dom";
 import { Nav, Navbar} from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 
 export const NavigationBar = () => (
     <Navbar bg="light" variant="light">
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">Navbar</Navbar.Brand>
         <Nav className="mr-auto nav">
-            <Nav.Link href="#pricing">Inicio</Nav.Link>
-            <Nav.Link href="#home">Camisetas</Nav.Link>
-            <Nav.Link href="#features">Sobre Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/shirt">Camisetas</Nav.Link>
+            <Nav.Link as={Link} to="/about">Sobre Nosotros</Nav.Link>
         </Nav>
     </Navbar>
 )
