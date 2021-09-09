@@ -6,7 +6,8 @@ import {Shirt} from "./shirt/Shirt";
 import {useEffect, useState} from "react";
 import {ShirtApi} from "../api/ShirtApi";
 import {Home} from "./home/Home";
-
+import {FormAddShirt} from "./forms/FormAddShirt";
+import {FormEditShirt} from "./forms/FormEditShirt";
 
 export const App = () => {
 
@@ -34,6 +35,12 @@ export const App = () => {
             <Route path="/about">
                 <About/>
             </Route>
+            <Route path="/formAddShirt">
+                <FormAddShirt/>
+            </Route>
+               <Route path="/formEditShirt">
+            <FormEditShirt/>
+        </Route>
         </Switch>
     </Router>
 }

@@ -1,13 +1,15 @@
 package org.camisetas.camisetasapp.models;
-
 import javax.persistence.*;
+import java.io.Serializable;
+import static javax.persistence.GenerationType.IDENTITY;
+
 
 @Entity
 @Table(name = "shirts")
-public class Shirt {
+public class Shirt implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private String size;

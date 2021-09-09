@@ -10,6 +10,7 @@ export const NavigationBar = () => (
             <Nav.Link as={Link} to="/">Inicio</Nav.Link>
             <Nav.Link as={Link} to="/shirt">Camisetas</Nav.Link>
             <Nav.Link as={Link} to="/about">Sobre Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/formAddShirt">Formulario</Nav.Link>
         </Nav>
     </Navbar>
 
