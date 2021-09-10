@@ -13,8 +13,7 @@ export const NavigationBar = () => (
             <Nav.Link as={Link} to="/about">Sobre Nosotros</Nav.Link>
             <Nav.Link as={Link} to="/formAddShirt">Formulario</Nav.Link>
         </Nav>
-        <Icon>AddShoppingCartIcon</Icon>
-
+        <Icon className="carro">AddShoppingCartIcon</Icon>
     </Navbar>
 
 )
