@@ -3,22 +3,27 @@
 * {
   text-decoration: none;
   padding: 10px;
-
+}
 
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+}
   .navigationBar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 75px;
     background-color: #FFFFFF;
-
-
   }
-  .nav{
+.navbar-light .navbar-nav .nav-link {
+  color: blue;
 
+  &:focus {
+    color: orange;
   }
-}
+
+  &:hover {
+    color: mediumpurple;
+  }
 }
