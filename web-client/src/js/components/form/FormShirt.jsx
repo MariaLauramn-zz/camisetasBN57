@@ -3,6 +3,7 @@ import {useDebugValue, useState} from "react";
 import {Form} from "react-bootstrap";
 import {ShirtApi} from "../../api/ShirtApi";
 import {Redirect, useLocation, useParams} from "react-router-dom";
+import './formShirt.scss';
 
 
 export const FormShirt = (props) => {
@@ -43,8 +44,8 @@ export const FormShirt = (props) => {
     }
 
 
-    return (<div>
-        <Form onSubmit={handleSubmit}>
+    return (<div className="formDiv">
+        <Form onSubmit={handleSubmit} className="styleForm">
 
             <Form.Group className="mb-3">
                 <label>Camiseta</label>
