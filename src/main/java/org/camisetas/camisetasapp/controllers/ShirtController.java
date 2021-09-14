@@ -12,8 +12,9 @@ import org.camisetas.camisetasapp.services.ShirtService;
 import java.io.IOException;
 
 import java.util.List;
+import java.util.Optional;
 
-
+@CrossOrigin
 @RestController
 public class ShirtController {
 
@@ -35,15 +36,10 @@ public class ShirtController {
         shirtRepository.save(shirt);
         return new ResponseEntity<>("Created", HttpStatus.OK);
     }
-
-    @GetMapping("/shirts/edit/{id}")
-    public String editShirt(Model model, @PathVariable Long id) {
-        return "shirt/Shirt";
+    @DeleteMapping("/shirts/{id}")
+    public ResponseEntity<String> deleteShirt(@PathVariable Long id) {
+        shirtRepository.deleteById(id);
+        return ResponseEntity.of(Optional.of("eliminada shirt"));
     }
 
-    @GetMapping("shirts/delete/{id}")
-    public String removeShirt(@PathVariable Long id) {
-        shirtService.delete(id);
-        return "redirect:/home";
-    }
 }
