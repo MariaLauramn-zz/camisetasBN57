@@ -1,31 +1,34 @@
 package org.camisetas.camisetasapp.models;
+
 import javax.persistence.*;
 import java.io.Serializable;
+
 import static javax.persistence.GenerationType.IDENTITY;
 
 
 @Entity
 @Table(name = "shirts")
-public class Shirt implements Serializable {
+public class Shirt {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String type;
     private String size;
     private String color;
     private double cost;
 
-
-    public Shirt(Long id, String name, String size, String color, double cost) {
-        this.name= name;
-        this.size = size;
-        this.color = color;
-        this.cost = cost;
+    public Shirt() {
 
     }
 
-    public Shirt() {
+    public Shirt(String name, String type, String size, String color, double cost) {
+        this.name = name;
+        this.type = type;
+        this.size = size;
+        this.color = color;
+        this.cost = cost;
 
     }
 
@@ -44,6 +47,14 @@ public class Shirt implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getSize() {
@@ -70,3 +81,4 @@ public class Shirt implements Serializable {
         this.cost = cost;
     }
 }
+
