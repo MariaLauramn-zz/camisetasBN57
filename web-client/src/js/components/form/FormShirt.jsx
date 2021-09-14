@@ -38,6 +38,9 @@ export const FormShirt = (props) => {
             .then(props.onSuccess)
 
     }
+    if (enviado) {
+        return <Redirect to="/"/>
+    }
 
 
     return (<div>

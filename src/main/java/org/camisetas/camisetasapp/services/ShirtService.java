@@ -1,4 +1,4 @@
-package org.camisetas.camisetasapp.services;
+/*package org.camisetas.camisetasapp.services;
 
 import org.camisetas.camisetasapp.models.Shirt;
 import org.camisetas.camisetasapp.models.ShirtRepository;
@@ -33,4 +33,4 @@ public class ShirtService {
         shirtRepository.deleteById(id);
     }
 
-}
+} */
