@@ -12,7 +12,7 @@ export const ShirtCard = (props) =>
         <div className="shirt__info">
             <div className="shirt__info__Contenido">
                 <div className="shirt__info__Contenido__Name">{props.shirt.name}</div>
-                <div className="shirt__info__Contenido__Categoria">{props.shirt.size}</div>
+                <div className="shirt__info__Contenido__Categoria">{props.shirt.type}</div>
             </div>
 
             <div className="shirt__info__Cost">
