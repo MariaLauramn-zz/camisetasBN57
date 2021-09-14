@@ -18,15 +18,21 @@ body {
     background-color: #FFFFFF;
   }
 .navbar-light .navbar-nav .nav-link {
-  color: blue;
+  color: rgba(0, 0, 0, 1);
 
   &:focus {
-    color: orange;
+    color: rgba(137, 177, 21, 1);
   }
   &:hover {
-    color: mediumpurple;
+    color: rgba(196, 196, 196, 1);
   }}
 
   .carro:hover{
-    color: chartreuse;
+    color: rgba(196, 196, 196, 1);
   }
+img.logo {
+  height: 50px;
+}
+button.navbar-toggler.collapsed {
+  border: none;
+}

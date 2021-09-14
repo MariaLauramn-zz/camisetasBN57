@@ -4,5 +4,7 @@ import { Nav, Navbar} from "react-bootstrap";
 
 
 export const Home = () => (
+    <>
     <h1>Home hello</h1>
+    </>
 )

@@ -9,6 +9,7 @@ import {ShirtApi} from "../api/ShirtApi";
 import {Home} from "./home/Home";
 import {FormAddShirt} from "./forms/FormAddShirt";
 import {FormEditShirt} from "./forms/FormEditShirt";
+import {SoporteAlCliente} from "./soportealcliente/SoporteAlCliente";
 
 export const App = () => {
 
@@ -42,7 +43,11 @@ export const App = () => {
                <Route path="/formEditShirt">
             <FormEditShirt/>
         </Route>
+            <Route path="/SoporteAlCliente">
+                <SoporteAlCliente/>
+            </Route>
         </Switch>
         <Footer/>
+
     </Router>
 }
