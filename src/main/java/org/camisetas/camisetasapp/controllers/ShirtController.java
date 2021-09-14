@@ -29,7 +29,7 @@ public class ShirtController {
         return shirtRepository.findAll();
     }
 
-    @PostMapping("shirts/")
+    @PostMapping("/shirts")
     public Shirt saveShirt(@RequestBody Shirt shirt) {
         return shirtRepository.save(shirt);
     }
