@@ -30,18 +30,4 @@ body {
   flex-wrap: wrap;
   padding: 20px;
 
-  .shirt{
-    width: 100px;
-    border: thin solid black;
-    border-radius: 10px;
-    margin:10px;
-    padding:10px;
-
-    &:hover{
-      transform: translate(1px,1px);
-      background-color: aquamarine;
-      cursor: pointer;
-
-    }
-  }
 }
