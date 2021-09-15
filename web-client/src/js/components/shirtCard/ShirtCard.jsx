@@ -20,10 +20,7 @@ export const ShirtCard = (props) =>
             </div>
 
         </div>
-        <div className="shirt__buttons">
-            <Link className="carro" href="" ><AddShoppingCart/></Link>
 
-        </div>
 
 
     </div>

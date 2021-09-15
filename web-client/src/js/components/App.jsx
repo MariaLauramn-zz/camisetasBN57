@@ -10,7 +10,7 @@ import {Home} from "./home/Home";
 import {ShirtTable} from "./shirtTable/ShirtTable";
 import {FormShirt} from "./form/FormShirt";
 import {SoporteAlCliente} from "./soportealcliente/SoporteAlCliente";
-
+import {Cart} from "./cart/Cart";
 
 export const App = () => {
 
@@ -40,6 +40,9 @@ export const App = () => {
                     <ShirtTable
                         shirts={shirts}
                         onDeleteSuccess={load}/>
+                </Route>
+                <Route exact path="/cart">
+                <Cart/>
                 </Route>
                 <Route path="/add">
                     <FormShirt onSuccess={load}/>
