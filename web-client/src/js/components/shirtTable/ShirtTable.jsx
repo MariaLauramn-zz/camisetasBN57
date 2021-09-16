@@ -47,6 +47,6 @@ export const ShirtTable = (props) => {
                 </td>
             </tr>)}
         </tbody>
-    </Table>;
+    </Table>
     </div>)
 }
