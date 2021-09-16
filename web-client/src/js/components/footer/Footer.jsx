@@ -6,7 +6,7 @@ import {Container} from "react-bootstrap";
 
 
 export const Footer = () => (
-    <footer className="fixed-bottom">
+    <footer className="footer">
         <Container>
         <div className="d-flex justify-content-between">
             <div className="copy">

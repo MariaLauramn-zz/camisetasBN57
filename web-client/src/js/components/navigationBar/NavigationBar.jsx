@@ -9,7 +9,7 @@ import {AddShoppingCart} from "@material-ui/icons";
 
 export const NavigationBar = () => (
 
-    <Navbar expand="md" className="d-flex justify-content-evenly     shadow p-3 mb-5 bg-white">
+    <Navbar expand="md" className="fixed-top d-flex justify-content-evenly     shadow p-3 mb-5 bg-white">
         <Container>
             <Navbar.Brand as={Link} to="/">
                 <img className="logo" src={logo} alt="logo brand"/>
