@@ -13,11 +13,11 @@ export const FormShirt = (props) => {
     const [enviado, setEnviado] = useState(false)
 
     const [shirt, setShirt] = useState(locationData.state?.shirt || {
-        name: "",
-        type: "",
-        size: "",
-        color: "",
-        cost: ""
+        name: '',
+        type: '',
+        size: '',
+        color: '',
+        cost: ''
 
     }
     )

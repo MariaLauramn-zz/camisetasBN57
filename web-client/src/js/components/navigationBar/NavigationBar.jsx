@@ -16,11 +16,13 @@ export const NavigationBar = () => (
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="nav m-auto">
+                <Nav className="nav m-auto" activeKey="/home">
+
                     <Nav.Link as={Link} exact={true} to="/">Inicio</Nav.Link>
                         <Nav.Link as={Link} to="/shirt">Camisetas</Nav.Link>
                        <Nav.Link as={Link} to="/about">Sobre Nosotros</Nav.Link>
-                       <Nav.Link as={Link} to="/add">Crear camiseta</Nav.Link>
+
+
                 </Nav>
                 <Icon className="carro">AddShoppingCartIcon</Icon>
             </Navbar.Collapse>

@@ -28,18 +28,16 @@ export const App = () => {
             <NavigationBar/>
             <Switch>
                 <Route exact path="/">
-                    <Home/>
+
+                    <ShirtTable
+                        shirts={shirts}
+                        onDeleteSuccess={load}/>
                 </Route>
                 <Route path="/shirt">
                     <Shirt shirts={shirts}/>
                 </Route>
                 <Route path="/about">
                     <About/>
-                </Route>
-                <Route exact path="/">
-                    <ShirtTable
-                        shirts={shirts}
-                        onDeleteSuccess={load}/>
                 </Route>
                 <Route path="/add">
                     <FormShirt onSuccess={load}/>

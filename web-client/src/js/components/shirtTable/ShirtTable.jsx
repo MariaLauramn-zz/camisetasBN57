@@ -3,8 +3,12 @@ import {Table} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {ShirtApi} from "../../api/ShirtApi";
 
+
 export const ShirtTable = (props) => {
-    return <Table striped bordered hover>
+    return (<div>
+        <Link to="/add">Crear camiseta</Link>
+
+    <Table striped bordered hover>
         <thead>
         <tr>
             <th>Camiseta</th>
@@ -12,6 +16,7 @@ export const ShirtTable = (props) => {
             <th>Talla</th>
             <th>Color</th>
             <th>Precio</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -43,4 +48,5 @@ export const ShirtTable = (props) => {
             </tr>)}
         </tbody>
     </Table>;
+    </div>)
 }
