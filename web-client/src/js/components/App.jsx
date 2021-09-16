@@ -28,7 +28,10 @@ export const App = () => {
             <NavigationBar/>
             <Switch>
                 <Route exact path="/">
-                    <Home/>
+
+                    <ShirtTable
+                        shirts={shirts}
+                        onDeleteSuccess={load}/>
                 </Route>
                 <Route path="/shirt">
                     <Shirt shirts={shirts}/>
@@ -49,6 +52,9 @@ export const App = () => {
                 </Route>
                 <Route path="/edit/:id">
                     <FormShirt onSuccess={load}/>
+                </Route>
+                <Route path="/cart">
+                    <Cart/>
                 </Route>
 
             <Route path="/SoporteAlCliente">
