@@ -28,7 +28,9 @@ export const App = () => {
             <NavigationBar/>
             <Switch>
                 <Route exact path="/">
+                </Route>
 
+                <Route path="/tabla">
                     <ShirtTable
                         shirts={shirts}
                         onDeleteSuccess={load}/>
@@ -39,13 +41,8 @@ export const App = () => {
                 <Route path="/about">
                     <About/>
                 </Route>
-                <Route exact path="/">
-                    <ShirtTable
-                        shirts={shirts}
-                        onDeleteSuccess={load}/>
-                </Route>
                 <Route exact path="/cart">
-                <Cart/>
+                    <Cart/>
                 </Route>
                 <Route path="/add">
                     <FormShirt onSuccess={load}/>
@@ -57,10 +54,10 @@ export const App = () => {
                     <Cart/>
                 </Route>
 
-            <Route path="/SoporteAlCliente">
-                <SoporteAlCliente/>
-            </Route>
-        </Switch>
+                <Route path="/SoporteAlCliente">
+                    <SoporteAlCliente/>
+                </Route>
+            </Switch>
             <Footer/>
 
         </Router>
