@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import Icon from '@material-ui/icons/AddShoppingCart';
 import './navigationBar.scss';
 import logo from "../assets/img/logoBN57.png";
+import {AddShoppingCart} from "@material-ui/icons";
 
 
 
@@ -24,7 +25,7 @@ export const NavigationBar = () => (
 
 
                 </Nav>
-                <Icon className="carro">AddShoppingCartIcon</Icon>
+              <Link className="carro" to="/cart" ><AddShoppingCart/></Link>
             </Navbar.Collapse>
 
         </Container>
