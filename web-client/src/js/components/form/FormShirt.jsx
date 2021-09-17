@@ -40,7 +40,7 @@ export const FormShirt = (props) => {
 
     }
     if (enviado) {
-        return <Redirect to="/"/>
+        return <Redirect to="/tabla"/>
     }
 
 

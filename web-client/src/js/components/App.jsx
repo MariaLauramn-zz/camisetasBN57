@@ -11,6 +11,7 @@ import {ShirtTable} from "./shirtTable/ShirtTable";
 import {FormShirt} from "./form/FormShirt";
 import {SoporteAlCliente} from "./soportealcliente/SoporteAlCliente";
 import {Cart} from "./cart/Cart";
+import {Login} from "./login/Login";
 
 export const App = () => {
 
@@ -28,7 +29,7 @@ export const App = () => {
             <NavigationBar/>
             <Switch>
                 <Route exact path="/">
-                <Home/>
+                    <Home/>
                 </Route>
 
                 <Route path="/tabla">
@@ -54,6 +55,9 @@ export const App = () => {
                 <Route path="/cart">
                     <Cart/>
                 </Route>
+                <Route path="/login">
+                    <Login/>
+                </Route>
 
                 <Route path="/SoporteAlCliente">
                     <SoporteAlCliente/>
@@ -63,4 +67,18 @@ export const App = () => {
 
         </Router>
     </>
+    const [isLoggedIn, setLoggedIn] = useState(false)
+    const [isAdmin, setIsAdmin] = useState(false)
+
+    const login = (admin) => {
+        setLoggedIn(true)
+        setIsAdmin(admin)
+    }
+
+    if (isLoggedIn) {
+        if (isAdmin) {
+            return <ShirtTable/>
+        }
+        return <Home onSuccessfulLogin={login}/>
+    }
 }
