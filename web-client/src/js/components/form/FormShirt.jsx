@@ -44,7 +44,9 @@ export const FormShirt = (props) => {
     }
 
 
-    return (<div className="formDiv">
+    return (
+      <div className="principal">
+      <div className="formDiv">
         <Form onSubmit={handleSubmit} className="styleForm">
 
             <Form.Group className="mb-3">
@@ -110,5 +112,6 @@ export const FormShirt = (props) => {
 
         </Form>
 
-    </div>)
+    </div>
+      </div>)
 }

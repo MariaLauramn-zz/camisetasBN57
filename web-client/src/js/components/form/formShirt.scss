@@ -1,14 +1,15 @@
+.principal{
+  margin-top: 140px;
+}
+
 .formDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background: white;
-  margin-top: auto;
 }
 
 .styleForm {
-  position: absolute;
   margin-right: auto;
   margin-left: auto;
   max-width: 320px;

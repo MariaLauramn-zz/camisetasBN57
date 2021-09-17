@@ -6,8 +6,8 @@ import { Nav, Navbar} from "react-bootstrap";
 
 
 export const Home = () => (
-    <>
+    <div className= "principal">
     <h1>Home hello</h1>
 
-    </>
+    </div>
 )

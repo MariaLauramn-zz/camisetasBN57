@@ -3,6 +3,7 @@ import {ShirtCard} from "../shirtCard/ShirtCard";
 import {Container} from "react-bootstrap";
 
 export const Shirt = (props) => (
+    <div className= "principal">
     <Container>
     <section className={"shirtSection"}>
 
@@ -13,4 +14,5 @@ export const Shirt = (props) => (
 
     </section>
     </Container>
+      </div>
 );

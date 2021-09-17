@@ -2,10 +2,10 @@ import * as React from "react"
 import {Table} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {ShirtApi} from "../../api/ShirtApi";
-
+import  "./shirtTable.scss";
 
 export const ShirtTable = (props) => {
-    return (<div>
+    return (<div className= "principal">
         <Link to="/add">Crear camiseta</Link>
 
     <Table striped bordered hover>

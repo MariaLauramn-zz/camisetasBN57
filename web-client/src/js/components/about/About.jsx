@@ -1,6 +1,8 @@
 import * as React from 'react';
-
-export const About = () => <section className="aboutSection">
+import "./about.scss";
+export const About = () =>
+  <div className= "principal">
+  <section className="aboutSection">
     <p>
         HISTORIA BN57
 
@@ -8,3 +10,4 @@ export const About = () => <section className="aboutSection">
     </p>
     <p> otro espacio</p>
 </section>
+</div>

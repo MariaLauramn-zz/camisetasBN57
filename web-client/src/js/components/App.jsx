@@ -28,6 +28,7 @@ export const App = () => {
             <NavigationBar/>
             <Switch>
                 <Route exact path="/">
+                <Home/>
                 </Route>
 
                 <Route path="/tabla">
