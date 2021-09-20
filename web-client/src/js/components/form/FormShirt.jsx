@@ -51,7 +51,7 @@ export const FormShirt = (props) => {
       <div className="formDiv">
         <Form onSubmit={handleSubmit} className="styleForm">
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Camiseta</label>
                 <input id="name"
                        type="text"
@@ -62,7 +62,7 @@ export const FormShirt = (props) => {
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Modelo</label>
                 <input id="type"
                        type="text"
@@ -73,7 +73,7 @@ export const FormShirt = (props) => {
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Talla</label>
                 <input id="size"
                        type="text"
@@ -84,7 +84,7 @@ export const FormShirt = (props) => {
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Color</label>
                 <input id="color"
                        type="text"
@@ -95,7 +95,7 @@ export const FormShirt = (props) => {
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Precio</label>
                 <input id="cost"
                        type="number"
@@ -106,7 +106,7 @@ export const FormShirt = (props) => {
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Descripción</label>
                 <input id="description"
                        type="text"
@@ -117,7 +117,7 @@ export const FormShirt = (props) => {
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Género</label>
                 <input id="gender"
                        type="text"
@@ -128,7 +128,7 @@ export const FormShirt = (props) => {
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
                 <label>Imagen</label>
                 <input id="image"
                        type="text"
