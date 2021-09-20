@@ -7,10 +7,11 @@
   justify-content: center;
   align-items: center;
   background: white;
+  margin-bottom: 100px;
 }
 
 form.styleForm {
-  padding: 30px;
+  padding: 20px;
 }
 
 .styleForm {
@@ -22,9 +23,6 @@ form.styleForm {
   width: 20%;
 }
 
-.mb-3 {
-  width: auto;
-}
 
 input:not([type=checkbox]):not([type=radio]),
 select,
@@ -39,9 +37,13 @@ textarea {
 }
 
 label {
-  margin-bottom: 8px;
+  margin-bottom: -3px;
   display: block;
   color: #2b2e4a;
+}
+
+input.addImage.form-control-file {
+border-bottom: none;
 }
 
 .formDiv button {
@@ -51,4 +53,5 @@ label {
   padding: 7px;
   border-radius: 6px;
   float: right;
+  margin-top: 15px;
 }
