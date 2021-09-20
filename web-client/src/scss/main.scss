@@ -4,30 +4,4 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-
-
-  .navigationBar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 75px;
-    background-color: #FFFFFF;
-
-    * {
-      text-decoration: none;
-      padding: 10px;
-    }
-  }
-}
-
-.aboutSection{
-  padding:40px;
-
-}
-
-.shirtSection{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-
 }
