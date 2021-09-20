@@ -1,3 +1,16 @@
 .principal{
   margin-top: 140px;
 }
+.aboutSection {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.aboutSection > div {
+  width: 50%;
+  padding: 10px;
+  background: #fff;
+}
+.aboutSection > div:first-child  {
+  margin-right: 10px;
+}
