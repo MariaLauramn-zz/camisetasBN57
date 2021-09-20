@@ -130,10 +130,7 @@ export const FormShirt = (props) => {
 
             <Form.Group className="mb-2">
                 <label>Imagen</label>
-                <input id="image"
-                       type="text"
-                       name="image"
-                       placeholder="image"
+                <Form.Control type="file" className="addImage"
                        value={shirt.image}
                        onChange={handleInputChange}
                 />
