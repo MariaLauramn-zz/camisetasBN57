@@ -21,7 +21,9 @@ export const ShirtTable = (props) => {
             <th>Talla</th>
             <th>Color</th>
             <th>Precio</th>
-            <th></th>
+            <th>Descripción</th>
+            <th>Género</th>
+            <th>Imagen</th>
         </tr>
         </thead>
         <tbody>
@@ -32,6 +34,9 @@ export const ShirtTable = (props) => {
                 <td>{shirt.size}</td>
                 <td>{shirt.color}</td>
                 <td>{shirt.cost}</td>
+                <td>{shirt.description}</td>
+                <td>{shirt.gender}</td>
+                <td>{shirt.image}</td>
 
                 <td>
                     <button

@@ -16,18 +16,24 @@ public class Shirt {
     private String size;
     private String color;
     private double cost;
+    private String description;
+    private String gender;
+    private String image;
+
 
     public Shirt() {
 
     }
 
-    public Shirt(String name, String type, String size, String color, double cost) {
+    public Shirt(String name, String type, String size, String color, double cost, String description, String gender, String image) {
         this.name = name;
         this.type = type;
         this.size = size;
         this.color = color;
         this.cost = cost;
-
+        this.description = description;
+        this.gender = gender;
+        this.image = image;
     }
 
     public Long getId() {
@@ -77,6 +83,30 @@ public class Shirt {
 
     public void setCost(double cost) {
         this.cost = cost;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
 

@@ -19,8 +19,14 @@ public class ShirtDataLoader {
     public void loadCamisetasShirts() {
         shirtRepository.deleteAll();
         shirtRepository.saveAll(List.of(
-               new Shirt("Nubes amarilla", "Vintage", "Vintage", "Blanco", 10)
-
+                new Shirt("Nubes amarillas", "Vintage", "S", "Blanco", 10, "100% algodón", "unisex", "foto"),
+                new Shirt("Cielo Azul", "Vintage", "XL", "Negra", 25, "100% algodón", "unisex", "foto"),
+                new Shirt("Nubes amarillas", "Vintage", "S", "Blanco", 10, "100% algodón", "unisex", "foto"),
+                new Shirt("Cielo Azul", "Vintage", "XL", "Negra", 25, "100% algodón", "unisex", "foto"),
+                new Shirt("Nubes amarillas", "Vintage", "S", "Blanco", 10, "100% algodón", "unisex", "foto"),
+                new Shirt("Cielo Azul", "Vintage", "XL", "Negra", 25, "100% algodón", "unisex", "foto"),
+                new Shirt("Nubes amarillas", "Vintage", "S", "Blanco", 10, "100% algodón", "unisex", "foto"),
+                new Shirt("Cielo Azul", "Vintage", "XL", "Negra", 25, "100% algodón", "unisex", "foto")
         ));
     }
 }

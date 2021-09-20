@@ -17,8 +17,10 @@ export const FormShirt = (props) => {
         type: '',
         size: '',
         color: '',
-        cost: ''
-
+        cost: '',
+        description: '',
+        gender: '',
+        image: ''
     }
     )
 
@@ -77,7 +79,7 @@ export const FormShirt = (props) => {
                        type="text"
                        name="size"
                        value={shirt.size}
-                       placeholder="0"
+                       placeholder="XS S M XL XXL"
                        onChange={handleInputChange}
                 />
             </Form.Group>
@@ -100,6 +102,39 @@ export const FormShirt = (props) => {
                        name="cost"
                        placeholder="cost"
                        value={shirt.cost}
+                       onChange={handleInputChange}
+                />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+                <label>Descripción</label>
+                <input id="description"
+                       type="text"
+                       name="description"
+                       placeholder="description"
+                       value={shirt.description}
+                       onChange={handleInputChange}
+                />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+                <label>Género</label>
+                <input id="gender"
+                       type="text"
+                       name="gender"
+                       placeholder="gender"
+                       value={shirt.gender}
+                       onChange={handleInputChange}
+                />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+                <label>Imagen</label>
+                <input id="image"
+                       type="text"
+                       name="image"
+                       placeholder="image"
+                       value={shirt.image}
                        onChange={handleInputChange}
                 />
             </Form.Group>
