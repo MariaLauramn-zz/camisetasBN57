@@ -12,6 +12,7 @@ import {FormShirt} from "./form/FormShirt";
 import {SoporteAlCliente} from "./soportealcliente/SoporteAlCliente";
 import {Cart} from "./cart/Cart";
 import {Login} from "./login/Login";
+import {CompletedProduct} from "./completedProduct/completedProduct";
 
 
 export const App = () => {
@@ -58,6 +59,9 @@ export const App = () => {
                 </Route>
                 <Route path="/SoporteAlCliente">
                     <SoporteAlCliente/>
+                </Route>
+                < Route path="/BN57">
+                <CompletedProduct/>
                 </Route>
             </Switch>
             <Footer/>
