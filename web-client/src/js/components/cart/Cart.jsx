@@ -1,7 +1,7 @@
 import * as React from 'react';
 import "./cart.scss";
 import {Container} from "react-bootstrap";
-import sampleImage from "../../../imagenes/CABIN CREW.png";
+import sampleImage from "../assets/BN57.png";
 
 export const Cart = () =>(
     <div className="principal">

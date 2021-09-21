@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Button, ButtonGroup, ButtonToolbar, Col, Container, Form, Row} from "react-bootstrap";
 import "./completedProduct.scss"
 import {Link} from "react-router-dom";
-import sampleProductImage from "../../../imagenes/CABIN CREW.png";
+import sampleProductImage from "../assets/BN57.png";
 import {AddShoppingCart} from "@material-ui/icons";
 
 export const CompletedProduct = () => (
