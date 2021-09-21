@@ -3,7 +3,7 @@ import {Nav, Navbar, Container} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import Icon from '@material-ui/icons/AddShoppingCart';
 import './navigationBar.scss';
-import logo from "../assets/img/logoBN57.png";
+import logo from "../assets/logoBN57.png";
 import {AddShoppingCart} from "@material-ui/icons";
 
 

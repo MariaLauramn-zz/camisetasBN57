@@ -1,7 +1,8 @@
 import * as React from 'react';
 import "./shirtCard.scss";
-import sampleImage from "../../../imagenes/CABIN CREW.png";
 import {Link} from "react-router-dom";
+import sampleImage from "../assets/BN57.png";
+import Link from "@material-ui/core/Link";
 
 export const ShirtCard = (props) =>
 
