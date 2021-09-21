@@ -1,6 +1,6 @@
 import * as React from 'react';
 import "./shirtCard.scss";
-import sampleImage from "../../../imagenes/CABIN CREW.png";
+import sampleImage from "../assets/BN57.png";
 import Link from "@material-ui/core/Link";
 import {AddShoppingCart} from "@material-ui/icons";
 

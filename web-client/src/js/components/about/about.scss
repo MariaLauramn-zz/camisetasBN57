@@ -1,7 +1,7 @@
 .principal {
   margin-top: 140px;
 
-    }
+ }
 
 .aboutSection {
   display: -ms-flex;
@@ -16,5 +16,23 @@
 }
 .aboutSection > div:first-child  {
   margin-right: 10px;
+
  }
+/*.img-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width:100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  opacity: 25%;
+}*/
+
+.aboutImage {
+  display: flex;
+  margin:auto;
+
+}
+
 
