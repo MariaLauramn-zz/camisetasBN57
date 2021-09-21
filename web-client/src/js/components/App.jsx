@@ -13,6 +13,7 @@ import {SoporteAlCliente} from "./soportealcliente/SoporteAlCliente";
 import {Cart} from "./cart/Cart";
 import {Login} from "./login/Login";
 
+
 export const App = () => {
 
     const [shirts, setShirts] = useState([])
@@ -52,13 +53,9 @@ export const App = () => {
                 <Route path="/edit/:id">
                     <FormShirt onSuccess={load}/>
                 </Route>
-                <Route path="/cart">
-                    <Cart/>
-                </Route>
                 <Route path="/login">
                     <Login/>
                 </Route>
-
                 <Route path="/SoporteAlCliente">
                     <SoporteAlCliente/>
                 </Route>

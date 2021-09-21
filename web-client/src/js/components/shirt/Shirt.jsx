@@ -10,7 +10,6 @@ export const Shirt = (props) => (
 
         { props.shirts.map( shirt =>
             <ShirtCard shirt={shirt} />
-
         ) }
 
     </section>
