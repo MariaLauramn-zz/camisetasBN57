@@ -1,9 +1,9 @@
 import * as React from "react";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import Avion1 from "../assets/avion1.jpg";
-import Turbina from "../assets/turbina.jpg";
-import Avion2 from "../assets/avion2.jpg";
+import Avion1 from "../assets/avion1.png";
+import Turbina from "../assets/turbina.png";
+import Avion2 from "../assets/avion2.png";
 import "./home.scss";
 
 export const Home = () => (
@@ -54,7 +54,6 @@ export const Home = () => (
             </Carousel>
         </div>
         <Container>
-            <h1>Carousel</h1>
         </Container>
     </div>
 )
