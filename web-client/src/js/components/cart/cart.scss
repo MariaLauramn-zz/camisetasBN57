@@ -99,8 +99,33 @@
   }
 }
 
-
 .totalPedido{
- display:flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 114px;
+  margin-left: 75px;
+
+  &__makeOrder {
+    border: 0;
+    background: black;
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 6px;
+    float: left;
+    margin-bottom: 15px;
+
+    &__button{
+      text-decoration: none;
+      border:none;
+      background: none;
+      padding: 5px;
+    }
+    a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+  }
 }
+
+

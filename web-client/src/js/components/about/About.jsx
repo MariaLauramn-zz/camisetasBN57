@@ -15,17 +15,21 @@ export const About = () =>
             <section className="aboutSection">
                 <div>
                     <h3>HISTORIA BN57</h3>
-                    <p>Empezamos con la idea de que todos tienen la possibilidad de poder volar sentirse libre, con
-                        nuestras camisetas te daremos esta sensación de sentirse en las alturas. Con diseños de aviones
-                        divertidos y 100% organico.
+                    <p>BN57 es una marca especializada en aviación
+                      y viajes con base en Barcelona.Los diseños de nuestras colecciones
+                      son exclusivos y nuestras camisetas  están hechas con  algodón 100% ecológico
+                      de comercio justo hecho en Europa y comercializado en España.
                     </p>
                 </div>
                 <div>
-                    <h3>NUESTROS VALORES</h3>
-                    <p>El equilibrio entre la funcionalidad y la estética.
-                        La simplicidad y la elegancia el minimalismo, porque creemos que menos es más.
-                        Creemos que nos ayuda a crear el mejor producto el hecho de incorporar a nuestros usuarios en los procesos de diseño.
-                        La experimentación, la innovación y el futuro en cada uno de nuestros productos.
+                    <h3>BN57 - for a non-stop World</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                      velit esse cillum dolore eu fugiat nulla pariatur laborum.
+
+                      .
                     </p>
                 </div>
 

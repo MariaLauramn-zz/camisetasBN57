@@ -13,8 +13,7 @@ import {SoporteAlCliente} from "./soportealcliente/SoporteAlCliente";
 import {Cart} from "./cart/Cart";
 import {Login} from "./login/Login";
 import {CompletedProduct} from "./completedProduct/completedProduct";
-import {Carouselshirt} from "./carousel/Carouselshirt";
-
+import {FormularioCliente} from "./formularioCliente/FormularioCliente";
 
 export const App = () => {
 
@@ -33,9 +32,6 @@ export const App = () => {
             <Switch>
                 <Route exact path="/">
                     <Home/>
-                </Route>
-                <Route path="/carousel">
-                    <Carouselshirt/>
                 </Route>
 
                 <Route path="/tabla">
@@ -66,6 +62,9 @@ export const App = () => {
                 </Route>
                 < Route path="/BN57">
                     <CompletedProduct/>
+                </Route>
+                <Route path="/formularioCliente">
+                    <FormularioCliente/>
                 </Route>
             </Switch>
             <Footer/>
