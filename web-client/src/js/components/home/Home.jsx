@@ -7,7 +7,7 @@ import Avion2 from "../assets/avion2.jpg";
 import "./home.scss";
 
 export const Home = () => (
-    <div className="principal">
+    <div>
         <div className="carouselContainer">
             <Carousel>
                 <Carousel.Item>
