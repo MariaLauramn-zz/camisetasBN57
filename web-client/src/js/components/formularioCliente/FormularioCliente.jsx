@@ -1,10 +1,10 @@
 import * as React from 'react';
 import "./formularioCliente.scss";
 import {Form} from "react-bootstrap";
-import masterCard from "../assets/masterCard.png";
-import paypal from "../assets/paypal.png";
-import visa from "../assets/visa.png";
-import bank from "../assets/bank.png";
+import masterCard from '../assets/mastercard.png';
+import paypal from '../assets/paypal.png';
+import visa from '../assets/visa.png';
+import bank from '../assets/bank.png';
 
 export const FormularioCliente = () => (
 
@@ -80,7 +80,7 @@ export const FormularioCliente = () => (
 
                 </Form.Group>
 
-                <Form.Group className="mb-2 ">
+                <Form.Group className="mb-2 metodos">
                     <label>Métodos de pago</label>
                     <img src={paypal} alt="Paypal"/>
                     <img src={masterCard} alt="Mastercard"/>
