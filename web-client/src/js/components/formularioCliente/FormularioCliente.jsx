@@ -9,7 +9,7 @@ import bank from '../assets/bank.png';
 export const FormularioCliente = () => (
 
     <div className="principal">
-        <p>Datos de confirmación de la compra</p>
+        <h5>Datos de confirmación de la compra</h5>
         <div className="formDiv">
 
             <Form className="styleForm">
@@ -80,12 +80,14 @@ export const FormularioCliente = () => (
 
                 </Form.Group>
 
-                <Form.Group className="mb-2 metodos">
+                <Form.Group className="mb-2">
                     <label>Métodos de pago</label>
-                    <img src={paypal} alt="Paypal"/>
-                    <img src={masterCard} alt="Mastercard"/>
-                    <img src={visa} alt="Visa"/>
-                    <img src={bank} alt="Cuenta bancaria"/>
+                    <div className="metodos">
+                        <img src={paypal} alt="Paypal"/>
+                        <img src={masterCard} alt="Mastercard"/>
+                        <img src={visa} alt="Visa"/>
+                        <img src={bank} alt="Cuenta bancaria"/>
+                    </div>
                 </Form.Group>
 
                 <button>Pagar</button>
