@@ -1,4 +1,12 @@
-.principal{
-  margin-top: 140px;
+.carouselContainer {
+  height: 679px;
+  width: 100%;
+
+  img {
+    height: 679px;
+    width: auto;
+    object-fit: cover;
+
+  }
 }
 

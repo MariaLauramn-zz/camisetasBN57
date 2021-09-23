@@ -61,7 +61,7 @@ export const App = () => {
                     <SoporteAlCliente/>
                 </Route>
                 < Route path="/BN57">
-                <CompletedProduct/>
+                    <CompletedProduct/>
                 </Route>
                 <Route path="/formularioCliente">
                     <FormularioCliente/>
