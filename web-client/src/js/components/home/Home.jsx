@@ -1,12 +1,14 @@
 import * as React from "react";
-import {Container, Nav, Navbar} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import Avion1 from "../assets/avion1.png";
 import Turbina from "../assets/turbina.png";
 import Avion2 from "../assets/avion2.png";
+import postalinsta from "../assets/postalinsta.png";
 import "./home.scss";
 
 export const Home = () => (
+<Container>
     <div>
         <div className="carouselContainer">
             <Carousel>
@@ -54,6 +56,8 @@ export const Home = () => (
             </Carousel>
         </div>
         <Container>
+            <img className="postal" src={postalinsta} alt="Postal instagram"/>
         </Container>
     </div>
+</Container>
 )
