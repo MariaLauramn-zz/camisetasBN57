@@ -5,7 +5,8 @@ import "./soportealcliente.scss";
 export const SoporteAlCliente = () => (
   <div className= "principal">
        <Container>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+         <h1>Soporte al cliente</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
              eiusmod tempor incididunt ut labore et dolore magna aliqua.
            </p>
 
