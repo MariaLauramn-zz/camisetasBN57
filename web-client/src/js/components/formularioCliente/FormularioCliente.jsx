@@ -5,6 +5,7 @@ import masterCard from '../assets/mastercard.png';
 import paypal from '../assets/paypal.png';
 import visa from '../assets/visa.png';
 import bank from '../assets/bank.png';
+import {Link} from "react-router-dom";
 
 export const FormularioCliente = () => (
 
@@ -90,8 +91,11 @@ export const FormularioCliente = () => (
                     </div>
                 </Form.Group>
 
-                <button>Pagar</button>
-
+                <div>
+                    <button className="pago">
+                        <Link to="/">Pagar</Link>
+                    </button>
+                </div>
             </Form>
 
         </div>
