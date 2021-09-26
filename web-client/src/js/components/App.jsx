@@ -14,7 +14,7 @@ import {Cart} from "./cart/Cart";
 import {Login} from "./login/Login";
 import {CompletedProduct} from "./completedProduct/completedProduct";
 import {FormularioCliente} from "./formularioCliente/FormularioCliente";
-
+import {SizeGuide} from "./sizeGuide/SizeGuide";
 export const App = () => {
 
     const [shirts, setShirts] = useState([])
@@ -66,6 +66,9 @@ export const App = () => {
                 <Route path="/formularioCliente">
                     <FormularioCliente/>
                 </Route>
+              <Route path="/sizeGuide">
+               <SizeGuide/>
+              </Route>
             </Switch>
             <Footer/>
 
