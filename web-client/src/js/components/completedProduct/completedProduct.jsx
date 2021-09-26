@@ -11,7 +11,7 @@ export const CompletedProduct = () => (
             <div className="d-flex justify-content-center productContainer">
                 <div className="col-12 order-2 col-lg-6 order-lg-1  leftContainer">
                     <img src={sampleProductImage} alt="sampleProductImage"/>
-                    <Link>Guía de tallas</Link>
+                    <Link className="sizeLink" to="/sizeGuide">Guía de tallas</Link>
                 </div>
                 <div className="col-12 order-1 col-lg-6 order-lg-2 col-xl-5 rightContainer">
                     <h1 className="mb-4">BN57</h1>
@@ -79,7 +79,7 @@ export const CompletedProduct = () => (
                         Aspernatur cum dolor explicabo sequi tempore. Ab animi corporis eveniet ex expedita impedit
                         possimus quo quod repellat sed sequi suscipit, unde veritatis.
                     </div>
-                    <Link className="carro justify-content-end" to="/cart"><AddShoppingCart/></Link>
+                    <Link className="carroProduct d-flex justify-content-end" to="/cart"><AddShoppingCart/></Link>
                 </div>
             </div>
         </Container>

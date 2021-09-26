@@ -1,5 +1,6 @@
 .principal{
   margin-top: 140px;
+  margin-bottom: 200px;
 }
  img{
    width: 100%;
@@ -9,6 +10,10 @@
   height: auto;
   width: 500px;
   margin-right: 2rem;
+}
+a.sizeLink {
+  color: black;
+  text-decoration: underline;
 }
 button.bntTalla.btn.btn-none:focus {
   color: green;
@@ -34,7 +39,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -42,12 +46,8 @@ button.minus, button.plus {
   border: none;
   padding: 0.5rem;
 }
-
-.productContainer {
-  margin-bottom: 100px;
-}
-
-.carro{
-  margin-bottom: 100px;
+a.carroProduct.justify-content-end {
+  color: black;
+  margin-top: 25px;
 }
 
